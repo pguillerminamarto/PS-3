@@ -1,6 +1,6 @@
 ---
 title: "30538 Problem Set 3: git pair"
-author: "Dema Therese"
+author: "Guillermina"
 format: 
   pdf:
     keep-tex: true
@@ -38,12 +38,12 @@ return [head, plot]
 
 
 def preview_data(df):
-    print(df.head())
-
-
+    head = df.head()
+    description = df.describe()
+    return [head, description]
+    
 result = preview_data(data)
 
-print(result[0])
-result[1]
+result[0], result[1]
 
 ```
